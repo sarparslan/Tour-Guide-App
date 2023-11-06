@@ -5,7 +5,11 @@ This Java project is a tour guide tool for organizing ship tours in a coastal ci
 
 ## Introduction
 
-As a tour guide in a coastal city, you need to organize ship tours for your guests. There are N islands around the city, and your task is to plan a ship tour that starts from one island (X), includes a specific island (Y), and returns to the starting point, ensuring your guests have a memorable experience exploring the coastal beauty.
+Welcome to the Coastal City Ship Tour Organizer program! This program is designed to help tour guides organize ship tours for their guests in a coastal city. The tour will start from a specified island (Island X), include another island (Island Y), and return to the beginning point at the end of the tour.
+
+## Problem Statement
+
+As a tour guide in a coastal city, you need to organize a ship tour that includes N islands around the city and M undirected paths between the islands. The ship tour should start from Island X, include Island Y, and return to the beginning point at the end of the tour.
 
 ## Features
 
@@ -34,18 +38,38 @@ To use the Coastal Island Ship Tour Organizer, follow these steps:
 
 ## Input Format
 
-In the input, the first line contains two space-separated integers: N (number of islands) and M (number of connections).
+In the input, the first line contains 4 space separated integers, N, M, T and C. 
 
-Next, M lines contain two space-separated integers each: U and V, indicating bidirectional connections between islands U and V.
+N denotes the number of cities we have 
 
-Finally, the last line contains two space-separated integers: X (starting island) and Y (island to include in the tour).
+M denotes the number of connections between the N cities 
+
+T denotes the time required by airports to change their states 
+
+C denotes that the time for travelling one city to another. 
+
+Next M lines contains two space separated integers each 
+
+U and V denoting that there is a bidirectional road between city U and city V. 
+
+Next line contains two space separated integers, X the city we start to travel and Y the city we want to reach at the end.
+
+In the first line it is given that we have 5 cities and 5 bidirectional roads between them. For
+this case, time required the airports to change their state is 3 minutes and travel through any flight
+route is 5 minutes. The next lines gives the connections between the cities and the last line gives
+which city is the starting point and which city is the end point for this case.
+
+<img width="1190" alt="Screenshot 2023-11-06 at 23 07 41" src="https://github.com/sarparslan/Tour-Guide-App/assets/96438389/62c0d696-c264-4033-87fb-6b25c84f58e7">
+
 
 ## Output Format
 
-The output includes the following:
+In the output, the first line print an integer K, denoting the number of city you need to go through to reach city Y from the city X. 
 
-1. The sequence of islands visited during the ship tour, starting and ending at the same island.
+In next line, print K space separated integers denoting the path which will take the minimum amount of time (in minutes) required by to move from city X to city Y.
 
-2. The total number of islands visited during the tour.
+ In the last line, print the total time through the path from city X to city Y. There can be
+multiple paths. Print the lexicographically smallest one and then the total time for each path at the
+end.
 
-The program will also display additional tour details to help guide your guests.
+<img width="1190" alt="Screenshot 2023-11-06 at 23 07 58" src="https://github.com/sarparslan/Tour-Guide-App/assets/96438389/d9638600-eded-4769-9c61-aaa860e69787">
