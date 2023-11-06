@@ -38,38 +38,17 @@ To use the Coastal Island Ship Tour Organizer, follow these steps:
 
 ## Input Format
 
-In the input, the first line contains 4 space separated integers, N, M, T and C. 
+In the first line it is given that we have 6 islands and 6 bidirectional paths between them.
+The next lines gives the connections between the islands and the last line gives which island is the
+starting point and which island should be included to the tour for this case.
 
-N denotes the number of cities we have 
-
-M denotes the number of connections between the N cities 
-
-T denotes the time required by airports to change their states 
-
-C denotes that the time for travelling one city to another. 
-
-Next M lines contains two space separated integers each 
-
-U and V denoting that there is a bidirectional road between city U and city V. 
-
-Next line contains two space separated integers, X the city we start to travel and Y the city we want to reach at the end.
-
-In the first line it is given that we have 5 cities and 5 bidirectional roads between them. For
-this case, time required the airports to change their state is 3 minutes and travel through any flight
-route is 5 minutes. The next lines gives the connections between the cities and the last line gives
-which city is the starting point and which city is the end point for this case.
-
-<img width="1190" alt="Screenshot 2023-11-06 at 23 07 41" src="https://github.com/sarparslan/Tour-Guide-App/assets/96438389/62c0d696-c264-4033-87fb-6b25c84f58e7">
+<img width="916" alt="Screenshot 2023-11-06 at 23 12 48" src="https://github.com/sarparslan/Tour-Guide-App/assets/96438389/7e8b285c-2287-4647-85da-2963b7dc96ff">
 
 
 ## Output Format
 
-In the output, the first line print an integer K, denoting the number of city you need to go through to reach city Y from the city X. 
+In the output, program prints K space separated integers denoting the path which the tour starts from
+island X and includes island Y. There can be multiple paths. Program prints the lexicographically smallest
+one.
 
-In next line, print K space separated integers denoting the path which will take the minimum amount of time (in minutes) required by to move from city X to city Y.
-
- In the last line, print the total time through the path from city X to city Y. There can be
-multiple paths. Print the lexicographically smallest one and then the total time for each path at the
-end.
-
-<img width="1190" alt="Screenshot 2023-11-06 at 23 07 58" src="https://github.com/sarparslan/Tour-Guide-App/assets/96438389/d9638600-eded-4769-9c61-aaa860e69787">
+<img width="932" alt="Screenshot 2023-11-06 at 23 13 49" src="https://github.com/sarparslan/Tour-Guide-App/assets/96438389/e6a86782-07e9-4bf5-911a-c7e2bb09ab52">
